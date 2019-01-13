@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="soyPobre" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soy Pobre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWp-5Q-yS2">
+                                <rect key="frame" x="107" y="427" width="163" height="41"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="soyPobre" translatesAutoresizingMaskIntoConstraints="NO" id="DNG-Vq-BJm">
+                                <rect key="frame" x="103" y="249" width="171" height="171"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zm4-lL-I3x">
+                                <rect key="frame" x="153" y="188" width="71" height="53"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                <state key="normal" title="Rico">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.011644906383057929" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickSoyRico:" destination="BYZ-38-t0r" eventType="touchDown" id="EKZ-7x-MdU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luchito" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siE-IQ-jvd">
+                                <rect key="frame" x="16" y="476" width="343" height="59"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" red="0.36862745099999999" green="0.56078431370000004" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aplicación de Prueba" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfd-ah-ckl">
+                                <rect key="frame" x="17" y="62" width="343" height="118"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="118" id="w76-WU-ioq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" red="0.36862745098039218" green="0.5607843137254902" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="siE-IQ-jvd" firstAttribute="top" secondItem="XWp-5Q-yS2" secondAttribute="bottom" constant="8" symbolic="YES" id="0bS-ic-XyJ"/>
+                            <constraint firstItem="zm4-lL-I3x" firstAttribute="top" secondItem="Qfd-ah-ckl" secondAttribute="bottom" constant="8" symbolic="YES" id="6Kh-sS-C7n"/>
+                            <constraint firstItem="XWp-5Q-yS2" firstAttribute="top" secondItem="DNG-Vq-BJm" secondAttribute="bottom" constant="7" id="Die-2K-cBY"/>
+                            <constraint firstItem="DNG-Vq-BJm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="HLm-xs-fQ1"/>
+                            <constraint firstItem="DNG-Vq-BJm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="1" id="Nkz-nf-XZl"/>
+                            <constraint firstItem="zm4-lL-I3x" firstAttribute="centerX" secondItem="DNG-Vq-BJm" secondAttribute="centerX" id="Sqf-bc-kJw"/>
+                            <constraint firstItem="Qfd-ah-ckl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="VOf-XP-cx6"/>
+                            <constraint firstItem="siE-IQ-jvd" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="WQ1-v4-jvw"/>
+                            <constraint firstItem="Qfd-ah-ckl" firstAttribute="centerX" secondItem="zm4-lL-I3x" secondAttribute="centerX" id="Ysf-Jj-kYK"/>
+                            <constraint firstItem="zm4-lL-I3x" firstAttribute="centerX" secondItem="XWp-5Q-yS2" secondAttribute="centerX" id="b1d-CX-A7S"/>
+                            <constraint firstItem="DNG-Vq-BJm" firstAttribute="top" secondItem="zm4-lL-I3x" secondAttribute="bottom" constant="8" symbolic="YES" id="gOe-m7-W7B"/>
+                            <constraint firstItem="siE-IQ-jvd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lwD-TB-JID"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnRico" destination="zm4-lL-I3x" id="d7u-2k-2Ci"/>
+                        <outlet property="imgPobreRico" destination="DNG-Vq-BJm" id="oEk-8A-KoD"/>
+                        <outlet property="lblPobreRico" destination="XWp-5Q-yS2" id="wqG-DI-Lzp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="soyPobre" width="171" height="171"/>
+    </resources>
+</document>
